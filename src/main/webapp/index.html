@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla de Camiones y Conductores</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.datatables.net/1.10.24/css/jquery.dataTables.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Sistema Aduanero</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Camiones y Choferes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Reportes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Configuración</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+<main>
+<div class="container">
+    <h2 class="mt-4 mb-4">Tabla de Camiones y Conductores</h2>
+    <section>
+        <div class="table-responsive">
+         <table class="table table-bordered" id="camion">
+            <thead class="thead-dark">
+                <tr>
+                    <th>ID Camión</th>
+                    <th>Empresa</th>
+                    <th>Tipo de Carga</th>
+                    <th>País Origen</th>
+                    <th>País Destino</th>
+                    <th>¿Tiene Acoplado?</th>
+                    <th>Peso de Carga</th>
+                    <th>Conductor</th>
+                </tr>
+             </thead>
+        </table>
+        </div>
+    </section>
+
+</div>
+</main>
+
+
+<script src="js/GetRequest.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+    let table = new DataTable('#camion');
+</script>
+
+</body>
+</html>
